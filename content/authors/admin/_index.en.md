@@ -6,7 +6,7 @@ first_name: Keiichi
 last_name: Ishizu
 
 status:
-  icon: 🌊
+  icon: ""
 
 superuser: true
 highlight_name: true
