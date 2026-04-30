@@ -43,14 +43,14 @@ sections:
 
   - block: markdown
     content:
-      title: '🌊 My Research'
+      title: 'My Research'
       subtitle: ''
       text: |-
         I specialize in **electromagnetic (EM) exploration** — geophysical imaging of subsurface structures without drilling. My primary targets are **geothermal resources, seafloor massive sulfides, and volcanic structures**.
 
         I am actively developing **EM monitoring methods using controlled artificial sources** (enabling eruption precursor detection, geothermal reservoir monitoring, CO₂ sequestration monitoring) and a novel **drone-mounted EM survey system** to overcome access restrictions in volcanic and geothermal regions.
 
-        📩 Feel free to reach out for collaborations or inquiries.
+        Feel free to reach out for collaborations or inquiries.
     design:
       columns: '1'
 
