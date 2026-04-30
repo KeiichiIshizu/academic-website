@@ -6,7 +6,7 @@
 # Website name (set in params.yaml under hugoblox.branding.name)
 title: ''
 # Website URL
-baseURL: '/'
+baseURL: "https://KeiichiIshizu.github.io/academic-website/"
 
 ############################
 ## LANGUAGE
