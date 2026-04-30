@@ -1,0 +1,194 @@
+/* ============================================================
+   custom.css — White Minimalist "Blue Sky" Design
+   Properly scoped for light/dark mode compatibility
+   ============================================================ */
+
+/* ── Google Fonts: Inter ── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+/* ── Light mode design tokens (scoped to :root only, NOT dark) ── */
+:root {
+  --custom-bg:          #f9fafb;
+  --custom-bg-card:     #ffffff;
+  --custom-text:        #1e293b;
+  --custom-text-muted:  #64748b;
+  --custom-accent:      #2c3e50;
+  --custom-accent-hover:#34495e;
+  --custom-border:      #e2e8f0;
+  --custom-nav-bg:      rgba(249, 250, 251, 0.92);
+  --custom-shadow-card: 0 1px 3px 0 rgba(0,0,0,0.06), 0 1px 2px -1px rgba(0,0,0,0.04);
+  --custom-shadow-hover:0 4px 12px 0 rgba(3,105,161,0.12);
+}
+
+/* ── Dark mode overrides ── */
+.dark {
+  --custom-bg:          #0f172a;
+  --custom-bg-card:     #1e293b;
+  --custom-text:        #f1f5f9;
+  --custom-text-muted:  #94a3b8;
+  --custom-accent:      #5dade2;
+  --custom-accent-hover:#85c1e9;
+  --custom-border:      rgba(255,255,255,0.1);
+  --custom-nav-bg:      rgba(15, 23, 42, 0.92);
+  --custom-shadow-card: 0 1px 3px 0 rgba(0,0,0,0.3);
+  --custom-shadow-hover:0 4px 12px 0 rgba(56,189,248,0.15);
+}
+
+/* ── Base: apply only to elements, not :root (so Hugo Blox JS can toggle .dark class) ── */
+body {
+  background-color: var(--custom-bg) !important;
+  color:            var(--custom-text) !important;
+  font-family:      'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size:        16px;
+  line-height:      1.7;
+  letter-spacing:   0.01em;
+}
+
+/* ── Navigation (Glassmorphism) ── */
+nav, .navbar, header {
+  background-color: var(--custom-nav-bg) !important;
+  backdrop-filter:  blur(14px);
+  border-bottom:    1px solid var(--custom-border) !important;
+  box-shadow:       0 1px 3px rgba(0,0,0,0.04) !important;
+}
+
+/* ── Dropdown ── */
+.dropdown-menu {
+  background-color: var(--custom-bg-card) !important;
+  border: 1px solid var(--custom-border) !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08) !important;
+  border-radius: 12px !important;
+}
+.dropdown-item:hover {
+  background-color: rgba(3,105,161,0.08) !important;
+  color: var(--custom-accent) !important;
+}
+
+/* ── Section Spacing ── */
+section, .hb-section {
+  padding-top:    5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+/* ── Headings ── */
+h1, h2, h3, h4, h5, h6 {
+  color:          var(--custom-text) !important;
+  font-weight:    300 !important;
+  letter-spacing: 0.03em;
+  line-height:    1.3;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--custom-border);
+  margin-bottom: 1.5rem;
+}
+
+/* ── Links (scoped: not inside nav/buttons to avoid JS interference) ── */
+main a, article a, footer a, .content a {
+  color: var(--custom-accent) !important;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+main a:hover, article a:hover, .content a:hover {
+  color: var(--custom-accent-hover) !important;
+}
+
+/* ── Buttons: Outline Style ── */
+.btn, a.btn {
+  background-color: transparent !important;
+  border:           1px solid var(--custom-accent) !important;
+  color:            var(--custom-accent) !important;
+  border-radius:    9999px !important;
+  padding:          0.55rem 1.8rem !important;
+  font-weight:      400 !important;
+  font-size:        0.875rem;
+  letter-spacing:   0.05em;
+  transition:       all 0.25s ease !important;
+}
+.btn:hover, a.btn:hover {
+  background-color: var(--custom-accent) !important;
+  color:            #ffffff !important;
+  box-shadow:       var(--custom-shadow-hover) !important;
+}
+
+/* ── CV / Content pages ── */
+.page-body, article .content, .content {
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+  color: var(--custom-text) !important;
+}
+
+/* ── Tables ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+table th, table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--custom-border);
+  color: var(--custom-text) !important;
+  vertical-align: top;
+}
+table th {
+  font-weight: 500;
+  color: var(--custom-text-muted) !important;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ── News / Collection items ── */
+.hb-collection-item, [class*="collection"] article {
+  border-bottom:    1px solid var(--custom-border) !important;
+  padding:          1.25rem 0 !important;
+  transition:       transform 0.2s ease, box-shadow 0.2s ease;
+}
+.hb-collection-item:first-of-type {
+  border-top: 1px solid var(--custom-border) !important;
+}
+.hb-collection-item:hover {
+  transform:  translateY(-2px);
+  box-shadow: var(--custom-shadow-hover) !important;
+  background-color: rgba(3,105,161,0.04) !important;
+  border-radius: 8px !important;
+  padding-left: 0.75rem !important;
+}
+
+/* ── Hero ── */
+.hb-hero h1, [class*="hero"] h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem) !important;
+  font-weight: 200 !important;
+  color: #ffffff !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  letter-spacing: 0.08em;
+}
+.hb-hero p, [class*="hero"] p {
+  color: rgba(255,255,255,0.85) !important;
+}
+
+/* ── Footer ── */
+footer {
+  background-color: var(--custom-bg-card) !important;
+  border-top: 1px solid var(--custom-border) !important;
+  color: var(--custom-text-muted) !important;
+}
+footer a { color: var(--custom-text-muted) !important; }
+footer a:hover { color: var(--custom-accent) !important; }
+
+/* ── Muted text ── */
+.text-muted, small, .meta {
+  color: var(--custom-text-muted) !important;
+}
+
+/* ── Alpine.js ── */
+[x-cloak] { display: none !important; }
+
+/* ── CV Page Header Removal ── */
+body.page-cv h1:first-of-type,
+body.page-cv h1:first-of-type + div {
+  display: none !important;
+}

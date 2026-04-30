@@ -6,14 +6,14 @@
 # Website name (set in params.yaml under hugoblox.branding.name)
 title: ''
 # Website URL
-baseURL: 'https://example.com/'
+baseURL: '/'
 
 ############################
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
-hasCJKLanguage: false
+defaultContentLanguage: ja
+hasCJKLanguage: true
 defaultContentLanguageInSubdir: false
 removePathAccents: true
 

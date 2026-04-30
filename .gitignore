@@ -67,3 +67,6 @@ Desktop.ini
 
 *.log
 npm-debug.log*
+hugo_log.txt
+view_images.html
+download_image.py

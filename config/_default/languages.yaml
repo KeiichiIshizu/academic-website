@@ -1,22 +1,22 @@
 # Languages
-#   Create a section for each of your site's languages.
-#   Documentation: https://docs.hugoblox.com/reference/language/
+# デフォルト: 日本語 / Default: Japanese
 
-# Default language
+ja:
+  languageCode: ja
+  languageName: "日本語"
+  locale: ja
+  label: "日本語"
+  weight: 1
+  title: "石須 慶一"
+  params:
+    description: "石須慶一の研究者ウェブサイト — 電磁探査研究者"
+
 en:
+  languageCode: en
+  languageName: "English"
   locale: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
-
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  locale: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+  label: "English"
+  weight: 2
+  title: "Keiichi Ishizu"
+  params:
+    description: "Keiichi Ishizu's Academic Website — Electromagnetic Exploration Researcher"

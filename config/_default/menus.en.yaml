@@ -1,0 +1,42 @@
+# Navigation Links (English)
+main:
+  - name: Home
+    url: /en/
+    weight: 10
+
+  - name: News
+    url: /en/news/
+    weight: 20
+
+  - name: Research
+    url: /en/research/
+    weight: 30
+
+  - name: Achievements
+    url: "#"
+    weight: 40
+    hasChildren: true
+
+  - name: Publications
+    url: /en/publication/
+    parent: Achievements
+    weight: 41
+
+  - name: Presentations
+    url: /en/event/
+    parent: Achievements
+    weight: 42
+
+  - name: Grants
+    url: /en/project/
+    parent: Achievements
+    weight: 43
+
+  - name: Research Digest
+    url: /en/post/
+    parent: Achievements
+    weight: 44
+
+  - name: CV
+    url: /en/cv/
+    weight: 50

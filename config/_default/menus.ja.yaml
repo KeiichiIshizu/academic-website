@@ -1,0 +1,42 @@
+# Navigation Links (Japanese)
+main:
+  - name: ホーム
+    url: /
+    weight: 10
+
+  - name: ニュース
+    url: /news/
+    weight: 20
+
+  - name: 研究内容
+    url: /research/
+    weight: 30
+
+  - name: 研究成果
+    url: "#"
+    weight: 40
+    hasChildren: true
+
+  - name: 学術論文
+    url: /publication/
+    parent: 研究成果
+    weight: 41
+
+  - name: 学会発表
+    url: /event/
+    parent: 研究成果
+    weight: 42
+
+  - name: 外部資金
+    url: /project/
+    parent: 研究成果
+    weight: 43
+
+  - name: 論文解説
+    url: /post/
+    parent: 研究成果
+    weight: 44
+
+  - name: 経歴
+    url: /cv/
+    weight: 50
