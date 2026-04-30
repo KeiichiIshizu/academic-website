@@ -64,4 +64,8 @@ security:
 sitemap:
   _merge: deep
 
+services:
+  googleAnalytics:
+    id: 'G-SNVWMX2EW5'
+
 
