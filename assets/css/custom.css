@@ -120,14 +120,22 @@ main a:hover, article a:hover, .content a:hover {
   color: var(--custom-text) !important;
 }
 
-/* ── Activities Page: Smaller text for better look ── */
+/* ── Activities & Events Page: Smaller text for better look ── */
 .page-activities .page-body, 
 .page-activities article .content, 
-.page-activities .content {
+.page-activities .content,
+.page-event .page-body,
+.page-event article .content,
+.page-event .content,
+.page-publication .page-body,
+.page-publication article .content,
+.page-publication .content {
   font-size: 15px !important;
 }
 
-.page-activities li {
+.page-activities li,
+.page-event li,
+.page-publication li {
   margin-bottom: 0.4rem !important;
   line-height: 1.5 !important;
 }
