@@ -7,4 +7,4 @@ date: 2025-07-31
 
 
 
-{{< cta cta_link="sgepss_vol255_obayashi.pdf" cta_text="SGEPSS会報（第255号）の受賞記事を読む（PDF）" >}}
+{{< button url="sgepss_vol255_obayashi.pdf" new_tab="true" >}}SGEPSS会報（第255号）の受賞記事を読む（PDF）{{< /button >}}

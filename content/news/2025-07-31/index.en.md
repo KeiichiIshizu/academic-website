@@ -7,4 +7,4 @@ Awarded for "Advancement of electromagnetic exploration using natural and contro
 
 
 
-{{< cta cta_link="sgepss_vol255_obayashi.pdf" cta_text="Read the award article in SGEPSS Newsletter (Vol. 255) (PDF)" >}}
+{{< button url="sgepss_vol255_obayashi.pdf" new_tab="true" >}}Read the award article in SGEPSS Newsletter (Vol. 255) (PDF){{< /button >}}
