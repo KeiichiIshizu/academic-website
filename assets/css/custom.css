@@ -123,58 +123,7 @@ main a:hover, article a:hover, .content a:hover {
 /* ── Activities & Events Page: Smaller text for better look ── */
 .page-activities .page-body, 
 .page-activities article .content, 
-.page-activities .content {
-  font-size: 13px !important; /* Smaller base font for activities */
-}
-
-.page-activities li {
-  margin-bottom: 0.8rem !important;
-  line-height: 1.4 !important;
-  list-style: none !important;
-  position: relative;
-  padding-left: 1.2rem;
-  border-left: 1px solid var(--custom-border);
-}
-
-.page-activities li::before {
-  content: "";
-  position: absolute;
-  left: -4px;
-  top: 6px;
-  width: 7px;
-  height: 7px;
-  background-color: var(--custom-accent);
-  border-radius: 50%;
-}
-
-.page-activities li strong:first-child {
-  display: block;
-  font-size: 11px;
-  color: var(--custom-text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 2px;
-}
-
-.page-activities li ul {
-  margin-top: 0.3rem !important;
-  border-left: none !important;
-  padding-left: 0.8rem !important;
-}
-
-.page-activities li ul li {
-  font-size: 11px !important;
-  color: var(--custom-text-muted) !important;
-  margin-bottom: 0.2rem !important;
-  border-left: none !important;
-  padding-left: 0 !important;
-  list-style: disc !important;
-}
-
-.page-activities li ul li::before {
-  display: none !important;
-}
-
+.page-activities .content,
 .page-event .page-body,
 .page-event article .content,
 .page-event .content,
@@ -185,21 +134,86 @@ main a:hover, article a:hover, .content a:hover {
 .page-research-publications .content,
 .page-research .page-body,
 .page-research .content {
-  font-size: 15px !important;
+  font-size: 13px !important; /* Smaller base font for list pages */
 }
 
-/* Specifically target publication lists as requested (Approach B) */
-.article-style ol, .content ol {
-  font-size: 0.92rem !important;
-  line-height: 1.6 !important;
-}
-
+.page-activities li,
 .page-event li,
 .page-publication li,
 .page-research-publications li,
 .page-research li {
-  margin-bottom: 0.4rem !important;
-  line-height: 1.5 !important;
+  margin-bottom: 0.8rem !important;
+  line-height: 1.4 !important;
+  list-style: none !important;
+  position: relative;
+  padding-left: 1.2rem;
+  border-left: 1px solid var(--custom-border);
+}
+
+.page-activities li::before,
+.page-event li::before,
+.page-publication li::before,
+.page-research-publications li::before,
+.page-research li::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 6px;
+  width: 7px;
+  height: 7px;
+  background-color: var(--custom-accent);
+  border-radius: 50%;
+}
+
+/* Date/First-strong styling */
+.page-activities li strong:first-child,
+.page-event li strong:first-child,
+.page-publication li strong:first-child,
+.page-research-publications li strong:first-child,
+.page-research li strong:first-child {
+  display: block;
+  font-size: 11px;
+  color: var(--custom-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+}
+
+.page-activities li ul,
+.page-event li ul,
+.page-publication li ul,
+.page-research-publications li ul,
+.page-research li ul {
+  margin-top: 0.3rem !important;
+  border-left: none !important;
+  padding-left: 0.8rem !important;
+}
+
+.page-activities li ul li,
+.page-event li ul li,
+.page-publication li ul li,
+.page-research-publications li ul li,
+.page-research li ul li {
+  font-size: 11px !important;
+  color: var(--custom-text-muted) !important;
+  margin-bottom: 0.2rem !important;
+  border-left: none !important;
+  padding-left: 0 !important;
+  list-style: disc !important;
+}
+
+.page-activities li ul li::before,
+.page-event li ul li::before,
+.page-publication li ul li::before,
+.page-research-publications li ul li::before,
+.page-research li ul li::before {
+  display: none !important;
+}
+
+/* Specifically target publication lists as requested (Approach B) */
+.article-style ol, .content ol {
+  font-size: 13px !important;
+  line-height: 1.6 !important;
 }
 
 .page-activities li ul li {
