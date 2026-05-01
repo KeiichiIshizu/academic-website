@@ -40,3 +40,7 @@ main:
   - name: 経歴
     url: /cv/
     weight: 50
+
+  - name: 活動履歴
+    url: /activities/
+    weight: 45

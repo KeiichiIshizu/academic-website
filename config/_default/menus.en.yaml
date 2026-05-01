@@ -40,3 +40,8 @@ main:
   - name: CV
     url: cv/
     weight: 50
+
+  - name: Activities
+    url: activities/
+    weight: 45
+
