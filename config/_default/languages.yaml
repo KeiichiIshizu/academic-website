@@ -2,8 +2,6 @@
 # デフォルト: 日本語 / Default: Japanese
 
 ja:
-  languageCode: ja
-  languageName: "日本語"
   locale: ja
   label: "日本語"
   weight: 1
@@ -12,8 +10,6 @@ ja:
     description: "石須慶一の研究者ウェブサイト — 電磁探査研究者"
 
 en:
-  languageCode: en
-  languageName: "English"
   locale: en-us
   label: "English"
   weight: 2
