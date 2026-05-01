@@ -8,7 +8,7 @@ sections:
   - block: hero
     content:
       title: "Keiichi Ishizu"
-      text: "Electromagnetic Exploration Researcher"
+      text: "Geophysicist & Earth Scientist"
     design:
       background:
         image:
