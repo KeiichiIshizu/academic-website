@@ -72,7 +72,7 @@ type: page
 ## 2022
 
 * **2022/11/08** Presentation at the Geothermal Research Society of Japan 2022 Annual Meeting (Tokyo)
-  * Keiichi Ishizu, Yasuo Ogawa, Hiromi Fukino, Masahiro Ichiki, "Investigation of supercritical geothermal reservoir in Onikobe area by MT method" (URL: [https://grsj.gr.jp/event/conference/top/](https://grsj.gr.jp/event/conference/top/))
+  * **Keiichi Ishizu**, Yasuo Ogawa, Hiromi Fukino, Masahiro Ichiki, "Investigation of supercritical geothermal reservoir in Onikobe area by MT method" (URL: [https://grsj.gr.jp/event/conference/top/](https://grsj.gr.jp/event/conference/top/))
 * **2022/06/23** Oral Presentation at the 33rd Annual Meeting of the Japan Society of Geoinformatics
   * Title: "Improvement of resistivity imaging of seafloor massive sulfides by joint inversion of CSEM data measured by towed and seafloor receivers" (URL: [http://www.jsgi-map.org/geoinforum2022/02.pdf](http://www.jsgi-map.org/geoinforum2022/02.pdf))
 * **2022/06/27** Presentation at The International Workshop on Offshore Freshened Groundwater Research

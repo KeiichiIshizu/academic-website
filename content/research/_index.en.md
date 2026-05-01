@@ -7,7 +7,7 @@ date: 2026-04-29
 
 Next-generation metallic resources called seafloor massive sulfide deposits have been discovered in the seas around Japan. Since SMS deposits contain many metallic minerals that conduct electricity well, electrical and electromagnetic (EM) exploration — which can obtain information about subsurface electrical conductivity — is effective for mapping their distribution.
 
-I have been applying electrical/EM exploration in the Iheya and Irabu hydrothermal fields in the Okinawa Trough to elucidate subsurface resistivity structures and the formation mechanisms of SMS deposits. In the Iheya field, as reported in Ishizu et al. (2019, GRL), new discoveries were made regarding the morphology and development mechanism of SMS deposits.
+I have been applying electrical/EM exploration in the Iheya and Irabu hydrothermal fields in the Okinawa Trough to elucidate subsurface resistivity structures and the formation mechanisms of SMS deposits. In the Iheya field, as reported in **Ishizu** et al. (2019, GRL), new discoveries were made regarding the morphology and development mechanism of SMS deposits.
 
 ## Geothermal Resource Exploration
 

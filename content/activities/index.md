@@ -63,7 +63,7 @@ type: page
 ## 2022年 
 
 * **2022/11/08** 日本地熱学会令和4年学術講演会（東京大会）
-  * こちらの講演会で鬼首地熱地域の研究結果について発表予定です。石須慶一, 小川康雄, 吹野浩美, 市來雅啓，MT法による鬼首地域の超臨界地熱貯留層の調査，日本地熱学会令和4年学術講演会 2022年11月8日，[https://grsj.gr.jp/event/conference/top/](https://grsj.gr.jp/event/conference/top/)
+  * こちらの講演会で鬼首地熱地域の研究結果について発表予定です。**石須慶一**, 小川康雄, 吹野浩美, 市來雅啓，MT法による鬼首地域の超臨界地熱貯留層の調査，日本地熱学会令和4年学術講演会 2022年11月8日，[https://grsj.gr.jp/event/conference/top/](https://grsj.gr.jp/event/conference/top/)
 * **2022/06/23** 情報地質学会第33回講演会で口頭発表
   * こちらの講演会では、「曳航・海底受信機で測定されたCSEMデータの統合逆解析による海底熱水鉱床の比抵抗イメージング向上」について発表します。[http://www.jsgi-map.org/geoinforum2022/02.pdf](http://www.jsgi-map.org/geoinforum2022/02.pdf)
 * **2022/06/27** The International Workshop on Offshore Freshened Groundwater Research集会で発表

@@ -41,7 +41,7 @@ Graduate School of Engineering, Kyushu University
 | Date | Award | Organization |
 | :--- | :--- | :--- |
 | Nov 2025 | Obayashi Award<br>"Advancement of electromagnetic exploration using natural and controlled signals and its application to volcano research and resource development" | SGEPSS |
-| Mar 2024 | Top Downloaded Article (top 10%)<br>— Ishizu et al. (2022, JGR) | AGU |
+| Mar 2024 | Top Downloaded Article (top 10%)<br>— **Ishizu** et al. (2022, JGR) | AGU |
 | Nov 2019 | 146th Outstanding Student Presentation Award | SGEPSS |
 | Sep 2019 | Young Researcher Poster Award | The Mining and Materials Processing Institute of Japan (MMIJ) |
 | Jul 2017 | 136th Best Presentation Award (Oral) | The Society of Exploration Geophysicists of Japan (SEGJ) |

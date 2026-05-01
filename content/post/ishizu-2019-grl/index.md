@@ -1,5 +1,5 @@
 ---
-title: "海底熱水鉱床の２階建て分布を可視化に成功 (Ishizu et al., 2019, GRL)"
+title: "海底熱水鉱床の２階建て分布を可視化に成功 (**Ishizu** et al., 2019, GRL)"
 date: 2019-01-01
 summary: "海底熱水鉱床が海底面（上部鉱床）だけではなく，海底下30m程度の深度に存在する（下部鉱床）ということを解明"
 authors: ["admin"]
@@ -19,4 +19,4 @@ tags: ["論文解説", "GRL", "Seafloor Massive Sulfides"]
 日経新聞や財形新聞などに取り上げられました。
 *財形新聞での記事 [https://www.zaikei.co.jp/article/20191030/537135.html](https://www.zaikei.co.jp/article/20191030/537135.html)*
 
-![図は、Ishizu et al., (2019) GRLより改変。](figure1.png)
+![図は、**Ishizu** et al., (2019) GRLより改変。](figure1.png)

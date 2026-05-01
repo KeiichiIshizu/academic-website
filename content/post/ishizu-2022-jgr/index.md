@@ -1,5 +1,5 @@
 ---
-title: "超臨界地熱貯留層を可視化に成功 (Ishizu et al., 2022, JGR)"
+title: "超臨界地熱貯留層を可視化に成功 (**Ishizu** et al., 2022, JGR)"
 date: 2022-01-01
 summary: "超臨界地熱貯留層の上部にシリカ遮水層が存在し，この遮水層が超臨界地熱貯留層の形成に寄与していることを発見"
 authors: ["admin"]
@@ -18,4 +18,4 @@ tags: ["論文解説", "JGR", "Geothermal", "MT"]
 *日経新聞オンラインでの記事 [https://www.nikkei.com/article/DGXZQOUC1198L0R10C22A3000000/](https://www.nikkei.com/article/DGXZQOUC1198L0R10C22A3000000/)*
 *日刊工業新聞での記事 [https://www.nikkan.co.jp/articles/view/629848](https://www.nikkan.co.jp/articles/view/629848)*
 
-![図は、Ishizu et al., (2022) JGRより改変。](figure1.png)
+![図は、**Ishizu** et al., (2022) JGRより改変。](figure1.png)
