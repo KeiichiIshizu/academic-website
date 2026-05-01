@@ -127,19 +127,28 @@ main a:hover, article a:hover, .content a:hover {
 .page-event .page-body,
 .page-event article .content,
 .page-event .content,
+.page-events .page-body,
+.page-events .content,
+.type-event .page-body,
+.type-event .content,
 .page-publication .page-body,
 .page-publication article .content,
 .page-publication .content,
+.type-publication .page-body,
+.type-publication .content,
 .page-research-publications .page-body,
 .page-research-publications .content,
 .page-research .page-body,
 .page-research .content {
-  font-size: 13px !important; /* Smaller base font for list pages */
+  font-size: 12px !important; /* Even smaller font as requested */
 }
 
 .page-activities li,
 .page-event li,
+.page-events li,
+.type-event li,
 .page-publication li,
+.type-publication li,
 .page-research-publications li,
 .page-research li {
   margin-bottom: 0.8rem !important;
@@ -152,7 +161,10 @@ main a:hover, article a:hover, .content a:hover {
 
 .page-activities li::before,
 .page-event li::before,
+.page-events li::before,
+.type-event li::before,
 .page-publication li::before,
+.type-publication li::before,
 .page-research-publications li::before,
 .page-research li::before {
   content: "";
@@ -168,11 +180,14 @@ main a:hover, article a:hover, .content a:hover {
 /* Date/First-strong styling */
 .page-activities li strong:first-child,
 .page-event li strong:first-child,
+.page-events li strong:first-child,
+.type-event li strong:first-child,
 .page-publication li strong:first-child,
+.type-publication li strong:first-child,
 .page-research-publications li strong:first-child,
 .page-research li strong:first-child {
   display: block;
-  font-size: 11px;
+  font-size: 10px;
   color: var(--custom-text-muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -181,7 +196,10 @@ main a:hover, article a:hover, .content a:hover {
 
 .page-activities li ul,
 .page-event li ul,
+.page-events li ul,
+.type-event li ul,
 .page-publication li ul,
+.type-publication li ul,
 .page-research-publications li ul,
 .page-research li ul {
   margin-top: 0.3rem !important;
@@ -191,10 +209,13 @@ main a:hover, article a:hover, .content a:hover {
 
 .page-activities li ul li,
 .page-event li ul li,
+.page-events li ul li,
+.type-event li ul li,
 .page-publication li ul li,
+.type-publication li ul li,
 .page-research-publications li ul li,
 .page-research li ul li {
-  font-size: 11px !important;
+  font-size: 10px !important;
   color: var(--custom-text-muted) !important;
   margin-bottom: 0.2rem !important;
   border-left: none !important;
@@ -204,7 +225,10 @@ main a:hover, article a:hover, .content a:hover {
 
 .page-activities li ul li::before,
 .page-event li ul li::before,
+.page-events li ul li::before,
+.type-event li ul li::before,
 .page-publication li ul li::before,
+.type-publication li ul li::before,
 .page-research-publications li ul li::before,
 .page-research li ul li::before {
   display: none !important;
@@ -212,7 +236,7 @@ main a:hover, article a:hover, .content a:hover {
 
 /* Specifically target publication lists as requested (Approach B) */
 .article-style ol, .content ol {
-  font-size: 13px !important;
+  font-size: 12px !important;
   line-height: 1.6 !important;
 }
 
