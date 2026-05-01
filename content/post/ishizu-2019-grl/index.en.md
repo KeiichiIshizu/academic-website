@@ -1,5 +1,5 @@
 ---
-title: "Successful Visualization of the Two-Story Distribution of Seafloor Massive Sulfides (**Ishizu** et al., 2019, GRL)"
+title: "Successful Visualization of the Two-Story Distribution of Seafloor Massive Sulfides (Ishizu et al., 2019, GRL)"
 date: 2019-01-01
 summary: "Revealed that seafloor massive sulfides exist not only on the seafloor (upper deposit) but also at a depth of about 30m below the seafloor (lower deposit)."
 authors: ["admin"]
@@ -17,4 +17,4 @@ The marine electrical exploration device used in this study utilized 10 receiver
 
 Press release articles can be read here: [https://www.kyoto-u.ac.jp/ja/research-news/2019-11-01-0](https://www.kyoto-u.ac.jp/ja/research-news/2019-11-01-0)
 
-![The figure is modified from **Ishizu** et al. (2019) GRL.](figure1.png)
+![The figure is modified from Ishizu et al. (2019) GRL.](figure1.png)

@@ -1,5 +1,5 @@
 ---
-title: "Controlled-Source Electromagnetic Survey in Volcanic Areas (**Ishizu** et al., 2025, GJI)"
+title: "Controlled-Source Electromagnetic Survey in Volcanic Areas (Ishizu et al., 2025, GJI)"
 date: 2025-01-01
 summary: "Achieved significant improvement in S/N ratio using EM-ACROSS, revealing a vapor layer undetected by conventional MT surveys."
 authors: ["admin"]
@@ -17,4 +17,4 @@ In this paper, we demonstrate that a significant improvement in the S/N ratio is
 
 Furthermore, MT methods often struggle to detect thin high-resistivity layers because horizontal electric fields dominate. By using a controlled source, we can excite vertical currents, enabling the detection of vapor layers (thin high-resistivity bodies) that can cause phreatic eruptions. This research introduces a new observation method to the field and represents a significant breakthrough in electromagnetic exploration.
 
-![The figure is modified from **Ishizu** et al. (2025) GJI.](figure1.png)
+![The figure is modified from Ishizu et al. (2025) GJI.](figure1.png)

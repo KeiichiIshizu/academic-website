@@ -1,5 +1,5 @@
 ---
-title: "火山地域における人工信号源電磁探査 (**Ishizu** et al., 2025, GJI)"
+title: "火山地域における人工信号源電磁探査 (Ishizu et al., 2025, GJI)"
 date: 2025-01-01
 summary: "電磁アクロスによりS/N比の大幅な向上を達成し、従来法のMT探査では検出できなかった蒸気層を発見"
 authors: ["admin"]

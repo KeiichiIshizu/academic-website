@@ -1,5 +1,5 @@
 ---
-title: "Successful Visualization of a Supercritical Geothermal Reservoir (**Ishizu** et al., 2022, JGR)"
+title: "Successful Visualization of a Supercritical Geothermal Reservoir (Ishizu et al., 2022, JGR)"
 date: 2022-01-01
 summary: "Discovery of a silica cap layer above a supercritical geothermal reservoir and its contribution to the reservoir's formation."
 authors: ["admin"]
@@ -15,4 +15,4 @@ This research relates to new technologies that can contribute to reducing carbon
 
 Press release articles can be read here: [https://www.titech.ac.jp/news/2022/063247](https://www.titech.ac.jp/news/2022/063247)
 
-![The figure is modified from **Ishizu** et al. (2022) JGR.](figure1.png)
+![The figure is modified from Ishizu et al. (2022) JGR.](figure1.png)
