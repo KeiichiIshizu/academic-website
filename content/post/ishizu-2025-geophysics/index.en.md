@@ -14,4 +14,4 @@ We have developed a new inversion algorithm that can accurately depict sharp res
 
 Accurately depicting sharp resistivity boundaries is crucial for improving the precision of resource exploration, particularly for metallic deposits. This method can be implemented by incorporating an ABIC search into existing inversion codes, and we hope it will be adopted across many platforms in the future.
 
-![The figure is modified from Ishizu et al. (2025) Geophysics. The proposed method correctly reproduces the sharp boundaries.](figure1.png)
+![The figure is modified from Ishizu et al. (2025) Geophysics. The proposed method correctly reproduces the sharp boundaries.](featured.png)
