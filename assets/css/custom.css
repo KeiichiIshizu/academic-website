@@ -123,7 +123,58 @@ main a:hover, article a:hover, .content a:hover {
 /* ── Activities & Events Page: Smaller text for better look ── */
 .page-activities .page-body, 
 .page-activities article .content, 
-.page-activities .content,
+.page-activities .content {
+  font-size: 13px !important; /* Smaller base font for activities */
+}
+
+.page-activities li {
+  margin-bottom: 0.8rem !important;
+  line-height: 1.4 !important;
+  list-style: none !important;
+  position: relative;
+  padding-left: 1.2rem;
+  border-left: 1px solid var(--custom-border);
+}
+
+.page-activities li::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 6px;
+  width: 7px;
+  height: 7px;
+  background-color: var(--custom-accent);
+  border-radius: 50%;
+}
+
+.page-activities li strong:first-child {
+  display: block;
+  font-size: 11px;
+  color: var(--custom-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+}
+
+.page-activities li ul {
+  margin-top: 0.3rem !important;
+  border-left: none !important;
+  padding-left: 0.8rem !important;
+}
+
+.page-activities li ul li {
+  font-size: 11px !important;
+  color: var(--custom-text-muted) !important;
+  margin-bottom: 0.2rem !important;
+  border-left: none !important;
+  padding-left: 0 !important;
+  list-style: disc !important;
+}
+
+.page-activities li ul li::before {
+  display: none !important;
+}
+
 .page-event .page-body,
 .page-event article .content,
 .page-event .content,
@@ -143,7 +194,6 @@ main a:hover, article a:hover, .content a:hover {
   line-height: 1.6 !important;
 }
 
-.page-activities li,
 .page-event li,
 .page-publication li,
 .page-research-publications li,
