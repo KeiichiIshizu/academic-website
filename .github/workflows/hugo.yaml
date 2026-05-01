@@ -40,7 +40,7 @@ jobs:
           hugo-version: '0.161.0'
           extended: true
       - name: Install Dart Sass
-        run: sudo snap install dart-sass
+        run: npm install -g sass
       - name: Checkout
         uses: actions/checkout@v4
         with:
