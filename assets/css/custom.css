@@ -115,9 +115,27 @@ main a:hover, article a:hover, .content a:hover {
 
 /* ── CV / Content pages ── */
 .page-body, article .content, .content {
-  font-size: 18px !important;
+  font-size: 16px !important;
   line-height: 1.6 !important;
   color: var(--custom-text) !important;
+}
+
+/* ── Activities Page: Smaller text for better look ── */
+.page-activities .page-body, 
+.page-activities article .content, 
+.page-activities .content {
+  font-size: 15px !important;
+}
+
+.page-activities li {
+  margin-bottom: 0.4rem !important;
+  line-height: 1.5 !important;
+}
+
+.page-activities li ul li {
+  font-size: 14px !important;
+  color: var(--custom-text-muted) !important;
+  margin-top: 0.1rem !important;
 }
 
 /* ── Tables ── */
