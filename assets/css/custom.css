@@ -129,13 +129,25 @@ main a:hover, article a:hover, .content a:hover {
 .page-event .content,
 .page-publication .page-body,
 .page-publication article .content,
-.page-publication .content {
+.page-publication .content,
+.page-research-publications .page-body,
+.page-research-publications .content,
+.page-research .page-body,
+.page-research .content {
   font-size: 15px !important;
+}
+
+/* Specifically target publication lists as requested (Approach B) */
+.article-style ol, .content ol {
+  font-size: 0.92rem !important;
+  line-height: 1.6 !important;
 }
 
 .page-activities li,
 .page-event li,
-.page-publication li {
+.page-publication li,
+.page-research-publications li,
+.page-research li {
   margin-bottom: 0.4rem !important;
   line-height: 1.5 !important;
 }
