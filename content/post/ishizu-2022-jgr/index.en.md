@@ -15,4 +15,3 @@ This research relates to new technologies that can contribute to reducing carbon
 
 Press release articles can be read here: [https://www.titech.ac.jp/news/2022/063247](https://www.titech.ac.jp/news/2022/063247)
 
-![The figure is modified from Ishizu et al. (2022) JGR.](featured.png)

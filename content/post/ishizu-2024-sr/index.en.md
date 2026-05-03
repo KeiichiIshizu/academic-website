@@ -13,4 +13,3 @@ tags: ["Research Highlight", "Scientific Reports", "Gas Hydrate"]
 
 By combining electrical resistivity tomography and seismic data, this study successfully estimated the distribution of shallow gas hydrates in the Sea of Japan. Shallow gas hydrates are found within gas chimneys, where gas is supplied from the deep subsurface. Our research revealed that gas hydrates are not uniformly present within these chimneys but exist in a spatially heterogeneous manner. This suggests that such heterogeneous distributions must be considered when evaluating future resource development and environmental protection.
 
-![The figure is modified from Ishizu et al. (2024) Scientific Reports.](featured.png)

@@ -17,4 +17,3 @@ In this paper, we demonstrate that a significant improvement in the S/N ratio is
 
 Furthermore, MT methods often struggle to detect thin high-resistivity layers because horizontal electric fields dominate. By using a controlled source, we can excite vertical currents, enabling the detection of vapor layers (thin high-resistivity bodies) that can cause phreatic eruptions. This research introduces a new observation method to the field and represents a significant breakthrough in electromagnetic exploration.
 
-![The figure is modified from Ishizu et al. (2025) GJI.](featured.png)

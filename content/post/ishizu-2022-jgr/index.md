@@ -18,4 +18,3 @@ tags: ["論文解説", "JGR", "Geothermal", "MT"]
 *日経新聞オンラインでの記事 [https://www.nikkei.com/article/DGXZQOUC1198L0R10C22A3000000/](https://www.nikkei.com/article/DGXZQOUC1198L0R10C22A3000000/)*
 *日刊工業新聞での記事 [https://www.nikkan.co.jp/articles/view/629848](https://www.nikkan.co.jp/articles/view/629848)*
 
-![図は、Ishizu et al., (2022) JGRより改変。](featured.png)

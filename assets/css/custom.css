@@ -8,74 +8,91 @@
 
 /* ── Light mode design tokens (scoped to :root only, NOT dark) ── */
 :root {
-  --custom-bg:          #f9fafb;
-  --custom-bg-card:     #ffffff;
-  --custom-text:        #1e293b;
-  --custom-text-muted:  #64748b;
-  --custom-accent:      #2c3e50;
-  --custom-accent-hover:#34495e;
-  --custom-border:      #e2e8f0;
-  --custom-nav-bg:      rgba(249, 250, 251, 0.92);
-  --custom-shadow-card: 0 1px 3px 0 rgba(0,0,0,0.06), 0 1px 2px -1px rgba(0,0,0,0.04);
-  --custom-shadow-hover:0 4px 12px 0 rgba(3,105,161,0.12);
+  --custom-bg: #f9fafb;
+  --custom-bg-card: #ffffff;
+  --custom-text: #1e293b;
+  --custom-text-muted: #64748b;
+  --custom-accent: #2c3e50;
+  --custom-accent-hover: #34495e;
+  --custom-border: #e2e8f0;
+  --custom-nav-bg: rgba(249, 250, 251, 0.92);
+  --custom-shadow-card: 0 1px 3px 0 rgba(0, 0, 0, 0.06), 0 1px 2px -1px rgba(0, 0, 0, 0.04);
+  --custom-shadow-hover: 0 4px 12px 0 rgba(3, 105, 161, 0.12);
 }
 
 /* ── Dark mode overrides ── */
 .dark {
-  --custom-bg:          #0f172a;
-  --custom-bg-card:     #1e293b;
-  --custom-text:        #f1f5f9;
-  --custom-text-muted:  #94a3b8;
-  --custom-accent:      #5dade2;
-  --custom-accent-hover:#85c1e9;
-  --custom-border:      rgba(255,255,255,0.1);
-  --custom-nav-bg:      rgba(15, 23, 42, 0.92);
-  --custom-shadow-card: 0 1px 3px 0 rgba(0,0,0,0.3);
-  --custom-shadow-hover:0 4px 12px 0 rgba(56,189,248,0.15);
+  --custom-bg: #0f172a;
+  --custom-bg-card: #1e293b;
+  --custom-text: #f1f5f9;
+  --custom-text-muted: #94a3b8;
+  --custom-accent: #5dade2;
+  --custom-accent-hover: #85c1e9;
+  --custom-border: rgba(255, 255, 255, 0.1);
+  --custom-nav-bg: rgba(15, 23, 42, 0.92);
+  --custom-shadow-card: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  --custom-shadow-hover: 0 4px 12px 0 rgba(56, 189, 248, 0.15);
 }
 
-/* ── Base: apply only to elements, not :root (so Hugo Blox JS can toggle .dark class) ── */
+/* ── Base ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--custom-bg) !important;
-  color:            var(--custom-text) !important;
-  font-family:      'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  font-size:        16px;
-  line-height:      1.7;
-  letter-spacing:   0.01em;
+  color: var(--custom-text) !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  overflow-x: hidden;
+  /* Prevent horizontal scroll globally */
 }
 
 /* ── Navigation (Glassmorphism) ── */
-nav, .navbar, header {
+nav,
+.navbar,
+header {
   background-color: var(--custom-nav-bg) !important;
-  backdrop-filter:  blur(14px);
-  border-bottom:    1px solid var(--custom-border) !important;
-  box-shadow:       0 1px 3px rgba(0,0,0,0.04) !important;
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--custom-border) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
 }
 
 /* ── Dropdown ── */
 .dropdown-menu {
   background-color: var(--custom-bg-card) !important;
   border: 1px solid var(--custom-border) !important;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
   border-radius: 12px !important;
 }
+
 .dropdown-item:hover {
-  background-color: rgba(3,105,161,0.08) !important;
+  background-color: rgba(3, 105, 161, 0.08) !important;
   color: var(--custom-accent) !important;
 }
 
 /* ── Section Spacing ── */
-section, .hb-section {
-  padding-top:    5rem !important;
+section,
+.hb-section {
+  padding-top: 5rem !important;
   padding-bottom: 5rem !important;
 }
 
 /* ── Headings ── */
-h1, h2, h3, h4, h5, h6 {
-  color:          var(--custom-text) !important;
-  font-weight:    300 !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--custom-text) !important;
+  font-weight: 300 !important;
   letter-spacing: 0.03em;
-  line-height:    1.3;
+  line-height: 1.3;
 }
 
 h2 {
@@ -86,43 +103,55 @@ h2 {
 }
 
 /* ── Links (scoped: not inside nav/buttons to avoid JS interference) ── */
-main a, article a, footer a, .content a {
+main a,
+article a,
+footer a,
+.content a {
   color: var(--custom-accent) !important;
   text-decoration: none;
   transition: color 0.2s ease;
 }
-main a:hover, article a:hover, .content a:hover {
+
+main a:hover,
+article a:hover,
+.content a:hover {
   color: var(--custom-accent-hover) !important;
 }
 
 /* ── Buttons: Outline Style ── */
-.btn, a.btn {
+.btn,
+a.btn {
   background-color: transparent !important;
-  border:           1px solid var(--custom-accent) !important;
-  color:            var(--custom-accent) !important;
-  border-radius:    9999px !important;
-  padding:          0.55rem 1.8rem !important;
-  font-weight:      400 !important;
-  font-size:        0.875rem;
-  letter-spacing:   0.05em;
-  transition:       all 0.25s ease !important;
+  border: 1px solid var(--custom-accent) !important;
+  color: var(--custom-accent) !important;
+  border-radius: 9999px !important;
+  padding: 0.55rem 1.8rem !important;
+  font-weight: 400 !important;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  transition: all 0.25s ease !important;
 }
-.btn:hover, a.btn:hover {
+
+.btn:hover,
+a.btn:hover {
   background-color: var(--custom-accent) !important;
-  color:            #ffffff !important;
-  box-shadow:       var(--custom-shadow-hover) !important;
+  color: #ffffff !important;
+  box-shadow: var(--custom-shadow-hover) !important;
 }
 
 /* ── CV / Content pages ── */
-.page-body, article .content, .content {
+.page-body,
+article .content,
+.content {
   font-size: 16px !important;
   line-height: 1.6 !important;
   color: var(--custom-text) !important;
 }
 
 /* ── Activities & Events Page: Smaller text for better look ── */
-.page-activities .page-body, 
-.page-activities article .content, 
+/* 各種ページのメインフォントサイズ */
+.page-activities .page-body,
+.page-activities article .content,
 .page-activities .content,
 .page-event .page-body,
 .page-event article .content,
@@ -140,9 +169,10 @@ main a:hover, article a:hover, .content a:hover {
 .page-research-publications .content,
 .page-research .page-body,
 .page-research .content {
-  font-size: 12px !important; /* Even smaller font as requested */
+  font-size: 12px !important;
 }
 
+/* 第1階層のリスト（箇条書き）スタイル */
 .page-activities li,
 .page-event li,
 .page-events li,
@@ -159,6 +189,7 @@ main a:hover, article a:hover, .content a:hover {
   border-left: 1px solid var(--custom-border);
 }
 
+/* 第1階層のリストのドット（青い点） */
 .page-activities li::before,
 .page-event li::before,
 .page-events li::before,
@@ -177,7 +208,7 @@ main a:hover, article a:hover, .content a:hover {
   border-radius: 50%;
 }
 
-/* Date/First-strong styling */
+/* 第1階層の太字（日付など）のスタイル */
 .page-activities li strong:first-child,
 .page-event li strong:first-child,
 .page-events li strong:first-child,
@@ -194,6 +225,7 @@ main a:hover, article a:hover, .content a:hover {
   margin-bottom: 2px;
 }
 
+/* 第2階層（ネストされたリスト）のコンテナ */
 .page-activities li ul,
 .page-event li ul,
 .page-events li ul,
@@ -207,6 +239,7 @@ main a:hover, article a:hover, .content a:hover {
   padding-left: 0.8rem !important;
 }
 
+/* 第2階層のリストアイテムの基本設定 */
 .page-activities li ul li,
 .page-event li ul li,
 .page-events li ul li,
@@ -215,14 +248,17 @@ main a:hover, article a:hover, .content a:hover {
 .type-publication li ul li,
 .page-research-publications li ul li,
 .page-research li ul li {
-  font-size: 10px !important;
   color: var(--custom-text-muted) !important;
   margin-bottom: 0.2rem !important;
   border-left: none !important;
   padding-left: 0 !important;
   list-style: disc !important;
+  /* ここを14pxに統一して、活動履歴と出版物で同じフォントサイズにします */
+  font-size: 14px !important;
+  margin-top: 0.1rem !important;
 }
 
+/* 第2階層のリストアイテムにつく青い点（第1階層用）を非表示にする */
 .page-activities li ul li::before,
 .page-event li ul li::before,
 .page-events li ul li::before,
@@ -234,16 +270,11 @@ main a:hover, article a:hover, .content a:hover {
   display: none !important;
 }
 
-/* Specifically target publication lists as requested (Approach B) */
-.article-style ol, .content ol {
+/* ナンバリングリスト(ol)の調整 */
+.article-style ol,
+.content ol {
   font-size: 12px !important;
   line-height: 1.6 !important;
-}
-
-.page-activities li ul li {
-  font-size: 14px !important;
-  color: var(--custom-text-muted) !important;
-  margin-top: 0.1rem !important;
 }
 
 /* ── Tables ── */
@@ -253,12 +284,15 @@ table {
   margin-bottom: 1.5rem;
   font-size: 0.95rem;
 }
-table th, table td {
+
+table th,
+table td {
   padding: 0.75rem 1rem;
   border-bottom: 1px solid var(--custom-border);
   color: var(--custom-text) !important;
   vertical-align: top;
 }
+
 table th {
   font-weight: 500;
   color: var(--custom-text-muted) !important;
@@ -268,32 +302,38 @@ table th {
 }
 
 /* ── News / Collection items ── */
-.hb-collection-item, [class*="collection"] article {
-  border-bottom:    1px solid var(--custom-border) !important;
-  padding:          1.25rem 0 !important;
-  transition:       transform 0.2s ease, box-shadow 0.2s ease;
+.hb-collection-item,
+[class*="collection"] article {
+  border-bottom: 1px solid var(--custom-border) !important;
+  padding: 1.25rem 0 !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .hb-collection-item:first-of-type {
   border-top: 1px solid var(--custom-border) !important;
 }
+
 .hb-collection-item:hover {
-  transform:  translateY(-2px);
+  transform: translateY(-2px);
   box-shadow: var(--custom-shadow-hover) !important;
-  background-color: rgba(3,105,161,0.04) !important;
+  background-color: rgba(3, 105, 161, 0.04) !important;
   border-radius: 8px !important;
   padding-left: 0.75rem !important;
 }
 
 /* ── Hero ── */
-.hb-hero h1, [class*="hero"] h1 {
+.hb-hero h1,
+[class*="hero"] h1 {
   font-size: clamp(2rem, 5vw, 3.5rem) !important;
   font-weight: 200 !important;
   color: #ffffff !important;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   letter-spacing: 0.08em;
 }
-.hb-hero p, [class*="hero"] p {
-  color: rgba(255,255,255,0.85) !important;
+
+.hb-hero p,
+[class*="hero"] p {
+  color: rgba(255, 255, 255, 0.85) !important;
 }
 
 /* ── Footer ── */
@@ -302,19 +342,89 @@ footer {
   border-top: 1px solid var(--custom-border) !important;
   color: var(--custom-text-muted) !important;
 }
-footer a { color: var(--custom-text-muted) !important; }
-footer a:hover { color: var(--custom-accent) !important; }
+
+footer a {
+  color: var(--custom-text-muted) !important;
+}
+
+footer a:hover {
+  color: var(--custom-accent) !important;
+}
 
 /* ── Muted text ── */
-.text-muted, small, .meta {
+.text-muted,
+small,
+.meta {
   color: var(--custom-text-muted) !important;
 }
 
 /* ── Alpine.js ── */
-[x-cloak] { display: none !important; }
+[x-cloak] {
+  display: none !important;
+}
 
 /* ── CV Page Header Removal ── */
 body.page-cv h1:first-of-type,
-body.page-cv h1:first-of-type + div {
+body.page-cv h1:first-of-type+div {
   display: none !important;
+}
+
+/* ── Mobile Optimizations (Padding & List Indentation) ── */
+@media screen and (max-width: 768px) {
+
+  /* Ensure all elements use border-box */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box !important;
+  }
+
+  /* Add padding to the main containers */
+  .container,
+  .container-fluid,
+  .hb-section,
+  .hb-article,
+  .page-body,
+  .article-container,
+  .docs-content,
+  main {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  /* Heading adjustments for mobile */
+  h1,
+  h2,
+  h3 {
+    word-break: break-word;
+  }
+
+  /* List indentation fix */
+  ul,
+  ol {
+    padding-left: 1.5rem !important;
+    margin-left: 0 !important;
+  }
+
+  /* Specific adjustment for Research/Activities list styles */
+  .page-activities li,
+  .page-event li,
+  .page-events li,
+  .type-event li,
+  .page-publication li,
+  .type-publication li,
+  .page-research-publications li,
+  .page-research li {
+    padding-left: 1.5rem !important;
+    margin-left: 0 !important;
+  }
+
+  /* Ensure tables are scrollable and don't break layout */
+  .content table,
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }

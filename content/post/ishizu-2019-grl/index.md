@@ -19,4 +19,3 @@ tags: ["論文解説", "GRL", "Seafloor Massive Sulfides"]
 日経新聞や財形新聞などに取り上げられました。
 *財形新聞での記事 [https://www.zaikei.co.jp/article/20191030/537135.html](https://www.zaikei.co.jp/article/20191030/537135.html)*
 
-![図は、Ishizu et al., (2019) GRLより改変。](featured.png)
