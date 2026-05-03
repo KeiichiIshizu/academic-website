@@ -379,13 +379,15 @@ body.page-cv h1:first-of-type+div {
     box-sizing: border-box !important;
   }
 
-  /* Add padding to the main containers */
+  /* Add padding to the main containers (学術論文用のクラスを追加) */
   .container,
   .container-fluid,
   .hb-section,
   .hb-article,
   .page-body,
   .article-container,
+  .article-style,
+  /* ←追加: 論文一覧を包むことが多いクラス */
   .docs-content,
   main {
     padding-left: 20px !important;
@@ -399,10 +401,11 @@ body.page-cv h1:first-of-type+div {
     word-break: break-word;
   }
 
-  /* List indentation fix */
+  /* List indentation fix (箇条書き全体を右に押し込む) */
   ul,
   ol {
-    padding-left: 1.5rem !important;
+    padding-left: 20px !important;
+    /* 1.5remから20pxに明示 */
     margin-left: 0 !important;
   }
 
@@ -414,7 +417,11 @@ body.page-cv h1:first-of-type+div {
   .page-publication li,
   .type-publication li,
   .page-research-publications li,
-  .page-research li {
+  .page-research li,
+  .pub-list-item
+
+  /* ←追加: Hugoテーマで論文リストによく使われるクラス */
+    {
     padding-left: 1.5rem !important;
     margin-left: 0 !important;
   }
