@@ -372,11 +372,10 @@ body.page-cv h1:first-of-type+div {
 /* ── Mobile Optimizations (Padding & List Indentation) ── */
 @media screen and (max-width: 768px) {
 
-
   /* ヒーロー背景画像のモバイル表示修正 */
   .hb-hero,
   [class*="hero"] {
-    background-image: inherit !important;
+    /* スマホでの強烈な拡大バグを防止（これが一番重要です） */
     background-size: cover !important;
     background-position: center center !important;
     background-attachment: scroll !important;
@@ -389,22 +388,33 @@ body.page-cv h1:first-of-type+div {
     box-sizing: border-box !important;
   }
 
-  /* Add padding to the main containers (学術論文用のクラスを追加) */
-  .container,
-  .container-fluid,
-  .hb-section,
-  .hb-article,
+  /* モバイル時の画面全体の左右余白を強制確保 */
+  main,
+  #main,
   .page-body,
   .article-container,
   .article-style,
-  /* ←追加: 論文一覧を包むことが多いクラス */
-  .docs-content,
-  main {
+  .container {
     padding-left: 20px !important;
     padding-right: 20px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
 
-  /* Heading adjustments for mobile */
+  /* 見出し（学術論文、2025年など）も端に寄らないように調整 */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    padding-left: 0 !important;
+    /* コンテナ側で余白を取るので要素自体は0でOK */
+    margin-left: 0 !important;
+  }
+
+  /* Heading adjustments for mobile (Word Break) */
   h1,
   h2,
   h3 {
@@ -430,7 +440,7 @@ body.page-cv h1:first-of-type+div {
   .page-research li,
   .pub-list-item
 
-  /* ←追加: Hugoテーマで論文リストによく使われるクラス */
+  /* Hugoテーマで論文リストによく使われるクラス */
     {
     padding-left: 1.5rem !important;
     margin-left: 0 !important;
