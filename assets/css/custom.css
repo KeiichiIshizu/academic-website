@@ -372,6 +372,16 @@ body.page-cv h1:first-of-type+div {
 /* ── Mobile Optimizations (Padding & List Indentation) ── */
 @media screen and (max-width: 768px) {
 
+
+  /* ヒーロー背景画像のモバイル表示修正 */
+  .hb-hero,
+  [class*="hero"] {
+    background-image: inherit !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-attachment: scroll !important;
+  }
+
   /* Ensure all elements use border-box */
   *,
   *::before,
