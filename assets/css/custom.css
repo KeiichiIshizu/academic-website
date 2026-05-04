@@ -413,12 +413,27 @@ body.page-cv h1:first-of-type+div {
   .max-w-prose {
     padding-left: 20px !important;
     padding-right: 20px !important;
+    padding-inline-start: 20px !important;
+    /* ←追加: Tailwind対策 */
+    padding-inline-end: 20px !important;
+    /* ←追加: Tailwind対策 */
     box-sizing: border-box !important;
+    width: 100% !important;
   }
 
-  /* .prose 内のリスト（学術論文の著者リストなど）の余白調整 */
-  .prose ul {
+  /* .prose 内のリスト（学術論文の著者リストなど）のインデントを強制 */
+  .prose ul,
+  .prose ol {
     padding-left: 1.5rem !important;
+    padding-inline-start: 1.5rem !important;
+    /* ←追加: Tailwind対策 */
+    margin-left: 0 !important;
+  }
+
+  .prose li {
+    padding-left: 0 !important;
+    padding-inline-start: 0 !important;
+    /* li自体の微小な余白をリセット */
   }
 
   /* 見出し（学術論文、2025年など）も端に寄らないように調整 */
