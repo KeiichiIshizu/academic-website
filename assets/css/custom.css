@@ -407,6 +407,20 @@ body.page-cv h1:first-of-type+div {
     box-sizing: border-box !important;
   }
 
+
+  /* Tailwind Typography (.prose) コンテナに対するモバイル余白の強制 */
+  .prose,
+  .max-w-prose {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* .prose 内のリスト（学術論文の著者リストなど）の余白調整 */
+  .prose ul {
+    padding-left: 1.5rem !important;
+  }
+
   /* 見出し（学術論文、2025年など）も端に寄らないように調整 */
   h1,
   h2,
