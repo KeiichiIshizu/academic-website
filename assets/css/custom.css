@@ -392,6 +392,12 @@ body.page-cv h1:first-of-type+div {
   main,
   #main,
   .page-body,
+  .hb-page-body,
+  /* ←追加: Hugo Bloxのページ枠 */
+  .hb-page-header,
+  /* ←追加: タイトル用の枠 */
+  .universal-wrapper,
+  /* ←追加: Academicテーマの一覧ページ用枠 */
   .article-container,
   .article-style,
   .container {
